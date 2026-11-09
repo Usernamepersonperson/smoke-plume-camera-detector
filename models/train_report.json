@@ -1,0 +1,14 @@
+{
+  "params": 104721,
+  "grid": [
+    12,
+    20
+  ],
+  "val_frame_threshold": 0.2,
+  "val_precision": 0.7112,
+  "val_recall": 0.6763,
+  "val_f1": 0.6933,
+  "train_images": 4454,
+  "val_images": 945,
+  "epochs": 30
+}

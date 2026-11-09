@@ -1,0 +1,6 @@
+Test images in data/testset/ are derived from the Pyro-SDIS dataset
+(https://huggingface.co/datasets/pyronear/pyro-sdis), licensed Apache-2.0,
+created by the Pyronear association with French fire and rescue services.
+Modifications: frames were downscaled to 160x96 pixels and re-encoded as JPEG.
+Annotations (smoke boxes) are the dataset's own, rescaled to the same frame.
+The model in models/ was trained on other cameras of the same dataset.

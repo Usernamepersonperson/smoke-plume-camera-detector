@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smokecam"
+version = "0.1.0"
+description = "Open-source early wildfire smoke detection from fixed cameras: CPU ONNX model, temporal confirmation, two-camera triangulation"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = ["numpy", "onnxruntime", "opencv-python-headless", "matplotlib"]
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+data = ["pyarrow"]
+train = ["torch"]
+
+[tool.setuptools]
+packages = ["smokecam"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E741", "B905", "E501"]

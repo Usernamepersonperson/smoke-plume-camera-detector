@@ -1,0 +1,908 @@
+{
+  "testset": {
+    "frames": 708,
+    "cameras": 33
+  },
+  "real_frames": {
+    "1": {
+      "n": 708,
+      "positives": 590,
+      "negatives": 118,
+      "tp": 316,
+      "fp": 74,
+      "fn": 274,
+      "tn": 44,
+      "precision": 0.8102564102564103,
+      "recall": 0.535593220338983,
+      "f1": 0.6448979591836734,
+      "false_positive_rate": 0.6271186440677966,
+      "localisation_hit_rate": 0.2468354430379747
+    },
+    "3": {
+      "n": 708,
+      "positives": 590,
+      "negatives": 118,
+      "tp": 427,
+      "fp": 93,
+      "fn": 163,
+      "tn": 25,
+      "precision": 0.8211538461538461,
+      "recall": 0.7237288135593221,
+      "f1": 0.7693693693693693,
+      "false_positive_rate": 0.788135593220339,
+      "localisation_hit_rate": 0.24355971896955503
+    },
+    "5": {
+      "n": 708,
+      "positives": 590,
+      "negatives": 118,
+      "tp": 513,
+      "fp": 104,
+      "fn": 77,
+      "tn": 14,
+      "precision": 0.8314424635332253,
+      "recall": 0.8694915254237288,
+      "f1": 0.8500414250207124,
+      "false_positive_rate": 0.8813559322033898,
+      "localisation_hit_rate": 0.31773879142300193
+    }
+  },
+  "real_roc": {
+    "auc": 0.452484918126975,
+    "recall_at_fpr_10": 0.10508474576271186,
+    "thr_at_fpr_10": 0.7588521838188171,
+    "recall_at_fpr_20": 0.17627118644067796,
+    "thr_at_fpr_20": 0.6752587556838989
+  },
+  "real_sequences_level3": {
+    "smoke_sequences": 75,
+    "smoke_confirmed": 52,
+    "non_smoke_sequences": 0,
+    "non_smoke_alarms": 0,
+    "median_frames_to_confirm": 3.5
+  },
+  "column_error": {
+    "n": 86,
+    "std_px_of_160": 10.68384811863019,
+    "mean_px": 8.010511627906975
+  },
+  "simulated": {
+    "cnn|level1|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 15,
+        "recall": 0.375,
+        "median_ttd_frames": 24.0,
+        "p90_ttd_frames": 48.599999999999994,
+        "median_ttd_minutes": 24.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 4,
+          "per_camera_day": 0.6666666666666666
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 10,
+          "per_camera_day": 1.6666666666666667
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 45,
+          "per_camera_day": 1.5
+        }
+      }
+    },
+    "cnn|level1|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 24,
+        "recall": 0.6,
+        "median_ttd_frames": 31.0,
+        "p90_ttd_frames": 78.1,
+        "median_ttd_minutes": 31.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 4,
+          "per_camera_day": 0.6666666666666666
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 7,
+          "per_camera_day": 1.1666666666666667
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 14,
+          "per_camera_day": 2.3333333333333335
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 46,
+          "per_camera_day": 1.5333333333333334
+        }
+      }
+    },
+    "cnn|level3|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 17,
+        "recall": 0.425,
+        "median_ttd_frames": 39.0,
+        "p90_ttd_frames": 76.2,
+        "median_ttd_minutes": 39.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 14,
+          "per_camera_day": 2.3333333333333335
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 15,
+          "per_camera_day": 2.5
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 55,
+          "per_camera_day": 1.8333333333333333
+        }
+      }
+    },
+    "cnn|level3|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 30,
+        "recall": 0.75,
+        "median_ttd_frames": 23.0,
+        "p90_ttd_frames": 84.0,
+        "median_ttd_minutes": 23.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 10,
+          "per_camera_day": 1.6666666666666667
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 12,
+          "per_camera_day": 2.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 11,
+          "per_camera_day": 1.8333333333333333
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 7,
+          "per_camera_day": 1.1666666666666667
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 58,
+          "per_camera_day": 1.9333333333333333
+        }
+      }
+    },
+    "cnn|level5|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 14,
+        "recall": 0.35,
+        "median_ttd_frames": 46.5,
+        "p90_ttd_frames": 74.5,
+        "median_ttd_minutes": 46.5
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 6,
+          "per_camera_day": 1.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 6,
+          "per_camera_day": 1.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 6,
+          "per_camera_day": 1.0
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 34,
+          "per_camera_day": 1.1333333333333333
+        }
+      }
+    },
+    "cnn|level5|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 32,
+        "recall": 0.8,
+        "median_ttd_frames": 24.5,
+        "p90_ttd_frames": 81.80000000000001,
+        "median_ttd_minutes": 24.5
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 6,
+          "per_camera_day": 1.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 7,
+          "per_camera_day": 1.1666666666666667
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 42,
+          "per_camera_day": 1.4
+        }
+      }
+    },
+    "classical|level1|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 22,
+        "recall": 0.55,
+        "median_ttd_frames": 6.0,
+        "p90_ttd_frames": 30.800000000000047,
+        "median_ttd_minutes": 6.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 17,
+          "per_camera_day": 2.8333333333333335
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 14,
+          "per_camera_day": 2.3333333333333335
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 28,
+          "per_camera_day": 4.666666666666667
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 90,
+          "per_camera_day": 3.0
+        }
+      }
+    },
+    "classical|level1|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 29,
+        "recall": 0.725,
+        "median_ttd_frames": 10.0,
+        "p90_ttd_frames": 77.6,
+        "median_ttd_minutes": 10.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 0,
+          "per_camera_day": 0.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 14,
+          "per_camera_day": 2.3333333333333335
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 14,
+          "per_camera_day": 2.3333333333333335
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 15,
+          "per_camera_day": 2.5
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 17,
+          "per_camera_day": 2.8333333333333335
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 60,
+          "per_camera_day": 2.0
+        }
+      }
+    },
+    "classical|level3|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 22,
+        "recall": 0.55,
+        "median_ttd_frames": 5.5,
+        "p90_ttd_frames": 30.70000000000005,
+        "median_ttd_minutes": 5.5
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 17,
+          "per_camera_day": 2.8333333333333335
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 28,
+          "per_camera_day": 4.666666666666667
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 12,
+          "per_camera_day": 2.0
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 88,
+          "per_camera_day": 2.933333333333333
+        }
+      }
+    },
+    "classical|level3|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 25,
+        "recall": 0.625,
+        "median_ttd_frames": 8.0,
+        "p90_ttd_frames": 59.6,
+        "median_ttd_minutes": 8.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 0,
+          "per_camera_day": 0.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 14,
+          "per_camera_day": 2.3333333333333335
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 12,
+          "per_camera_day": 2.0
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 16,
+          "per_camera_day": 2.6666666666666665
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 55,
+          "per_camera_day": 1.8333333333333333
+        }
+      }
+    },
+    "classical|level5|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 22,
+        "recall": 0.55,
+        "median_ttd_frames": 5.5,
+        "p90_ttd_frames": 30.70000000000005,
+        "median_ttd_minutes": 5.5
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 17,
+          "per_camera_day": 2.8333333333333335
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 28,
+          "per_camera_day": 4.666666666666667
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 12,
+          "per_camera_day": 2.0
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 88,
+          "per_camera_day": 2.933333333333333
+        }
+      }
+    },
+    "classical|level5|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 25,
+        "recall": 0.625,
+        "median_ttd_frames": 7.0,
+        "p90_ttd_frames": 60.2,
+        "median_ttd_minutes": 7.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 0,
+          "per_camera_day": 0.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 15,
+          "per_camera_day": 2.5
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 12,
+          "per_camera_day": 2.0
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 17,
+          "per_camera_day": 2.8333333333333335
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 57,
+          "per_camera_day": 1.9
+        }
+      }
+    },
+    "hybrid|level1|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 20,
+        "recall": 0.5,
+        "median_ttd_frames": 18.5,
+        "p90_ttd_frames": 55.30000000000003,
+        "median_ttd_minutes": 18.5
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 1,
+          "per_camera_day": 0.16666666666666666
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 6,
+          "per_camera_day": 1.0
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 10,
+          "per_camera_day": 1.6666666666666667
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 13,
+          "per_camera_day": 2.1666666666666665
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 48,
+          "per_camera_day": 1.6
+        }
+      }
+    },
+    "hybrid|level1|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 23,
+        "recall": 0.575,
+        "median_ttd_frames": 24.0,
+        "p90_ttd_frames": 77.80000000000001,
+        "median_ttd_minutes": 24.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 0,
+          "per_camera_day": 0.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 4,
+          "per_camera_day": 0.6666666666666666
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 10,
+          "per_camera_day": 1.6666666666666667
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 15,
+          "per_camera_day": 2.5
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 38,
+          "per_camera_day": 1.2666666666666666
+        }
+      }
+    },
+    "hybrid|level3|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 27,
+        "recall": 0.675,
+        "median_ttd_frames": 20.0,
+        "p90_ttd_frames": 70.80000000000003,
+        "median_ttd_minutes": 20.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 3,
+          "per_camera_day": 0.5
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 7,
+          "per_camera_day": 1.1666666666666667
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 8,
+          "per_camera_day": 1.3333333333333333
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 19,
+          "per_camera_day": 3.1666666666666665
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 55,
+          "per_camera_day": 1.8333333333333333
+        }
+      }
+    },
+    "hybrid|level3|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 27,
+        "recall": 0.675,
+        "median_ttd_frames": 19.0,
+        "p90_ttd_frames": 78.80000000000001,
+        "median_ttd_minutes": 19.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 0,
+          "per_camera_day": 0.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 7,
+          "per_camera_day": 1.1666666666666667
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 11,
+          "per_camera_day": 1.8333333333333333
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 12,
+          "per_camera_day": 2.0
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 20,
+          "per_camera_day": 3.3333333333333335
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 50,
+          "per_camera_day": 1.6666666666666667
+        }
+      }
+    },
+    "hybrid|level5|raw": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 29,
+        "recall": 0.725,
+        "median_ttd_frames": 21.0,
+        "p90_ttd_frames": 67.8,
+        "median_ttd_minutes": 21.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 3,
+          "per_camera_day": 0.5
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 24,
+          "per_camera_day": 4.0
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 16,
+          "per_camera_day": 2.6666666666666665
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 61,
+          "per_camera_day": 2.033333333333333
+        }
+      }
+    },
+    "hybrid|level5|confirmed": {
+      "smoke": {
+        "sequences": 40,
+        "detected": 33,
+        "recall": 0.825,
+        "median_ttd_frames": 19.0,
+        "p90_ttd_frames": 80.0,
+        "median_ttd_minutes": 19.0
+      },
+      "false_alarms": {
+        "clear": {
+          "camera_days": 6,
+          "episodes": 0,
+          "per_camera_day": 0.0
+        },
+        "clouds": {
+          "camera_days": 6,
+          "episodes": 9,
+          "per_camera_day": 1.5
+        },
+        "fog": {
+          "camera_days": 6,
+          "episodes": 7,
+          "per_camera_day": 1.1666666666666667
+        },
+        "glare_dust": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "mixed": {
+          "camera_days": 6,
+          "episodes": 18,
+          "per_camera_day": 3.0
+        },
+        "all": {
+          "camera_days": 30,
+          "episodes": 52,
+          "per_camera_day": 1.7333333333333334
+        }
+      }
+    }
+  },
+  "edge": {
+    "onnx_bytes": 419966,
+    "cnn_1thread": {
+      "median_ms": 1.0860999991564313,
+      "p95_ms": 1.7676250015938422
+    },
+    "classical": {
+      "median_ms": 4.53400000151305,
+      "p95_ms": 7.135254999593599
+    },
+    "grid": [
+      12,
+      20
+    ],
+    "stride": 8
+  },
+  "triangulation": {
+    "measured_sigma_px": {
+      "sigma_col_px": 10.68384811863019,
+      "sigma_heading_deg": 0.5,
+      "trials": 3000,
+      "no_fix": 255,
+      "median_m": 2701.55397851224,
+      "p90_m": 6099.627015052681,
+      "baseline_km": 25.51612473051116
+    },
+    "measured_sigma_deg": 7.606733396907717,
+    "sweep": [
+      {
+        "sigma_col_px": 0.5,
+        "sigma_heading_deg": 0.1,
+        "trials": 2000,
+        "no_fix": 44,
+        "median_m": 140.68495648415725,
+        "p90_m": 336.33807943004604,
+        "baseline_km": 25.51612473051116
+      },
+      {
+        "sigma_col_px": 1.0,
+        "sigma_heading_deg": 0.25,
+        "trials": 2000,
+        "no_fix": 48,
+        "median_m": 285.19373337231286,
+        "p90_m": 694.4148484784175,
+        "baseline_km": 25.51612473051116
+      },
+      {
+        "sigma_col_px": 2.0,
+        "sigma_heading_deg": 0.5,
+        "trials": 2000,
+        "no_fix": 56,
+        "median_m": 572.4968222465526,
+        "p90_m": 1347.914123841442,
+        "baseline_km": 25.51612473051116
+      },
+      {
+        "sigma_col_px": 4.0,
+        "sigma_heading_deg": 1.0,
+        "trials": 2000,
+        "no_fix": 80,
+        "median_m": 1136.1906851149324,
+        "p90_m": 2587.759771383979,
+        "baseline_km": 25.51612473051116
+      }
+    ]
+  },
+  "danger_snapshot": {
+    "Ticino (Lugano)": null,
+    "Valais (Sion)": {
+      "level": 2,
+      "title": "Moderate danger",
+      "region": "Sion-Sierre (VS)",
+      "valid_from": "27.10.2026"
+    },
+    "Graubuenden (Chur)": {
+      "level": 4,
+      "title": "High danger",
+      "region": "Rheintal (GR)",
+      "valid_from": "10.09.2026"
+    }
+  }
+}
