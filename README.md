@@ -113,7 +113,7 @@ flowchart LR
 ## Data sources
 
 - **Pyro-SDIS** wildfire smoke images, Pyronear association with French fire and rescue services, [huggingface.co/datasets/pyronear/pyro-sdis](https://huggingface.co/datasets/pyronear/pyro-sdis), **Apache-2.0** (permits training and redistribution with notice). `data/testset/` holds 708 downscaled frames with labels; see [NOTICE](NOTICE). The model was trained on 4,454 frames from other cameras.
-- **Forest-fire danger level**: FOEN/BAFU warning layer via the federal geo API (listed on [opendata.swiss](https://opendata.swiss/en/dataset/waldbrandgefahrenwarnung)). Fetched live and read-only; the metadata licence field is unspecified, so no values are redistributed beyond the one-line snapshot above. Source: FOEN/BAFU.
+- **Forest-fire danger level**: FOEN/BAFU warning layer via the federal geo API (listed on [opendata.swiss](https://opendata.swiss/en/dataset/waldbrandgefahrenwarnung)). Fetched live and read-only. Terms: opendata.swiss "Open use" (commercial use allowed, source citation not required; checked 2026-11-09 on the catalogue entry linked above). Only the one-line snapshot above is redistributed. Source: FOEN/BAFU.
 - Synthetic plumes, clouds, fog, glare, dust: generated in `smokecam/synth.py`.
 
 ## What is not verified yet
