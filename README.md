@@ -128,4 +128,4 @@ flowchart LR
 
 ## Licence
 
-MIT, Copyright (c) 2026 Victor Bonilla. Test images carry the Apache-2.0 terms of their source (see NOTICE).
+MIT, Copyright (c) 2026 VB-Builds. Test images carry the Apache-2.0 terms of their source (see NOTICE).
